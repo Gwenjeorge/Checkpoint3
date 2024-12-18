@@ -3,35 +3,42 @@
 
 #### Q.2.1.1 Sur le serveur, créer un compte pour ton usage personnel.  
 
-
+![TSSR](CP3/1-User.png)  
 
 #### Q.2.1.2 Quelles préconisations proposes-tu concernant ce compte ?    
 
 Un mot de passe sécurisé, avec 12 valeurs en mixte alphanumérique et caractères spéciaux. 
 
-
     
 ## Partie 2 : Configuration de SSH  
 
-
-    
 #### Q.2.2.1 Désactiver complètement l'accès à distance de l'utilisateur root.  
 
-
+Dans etc/ssh/sshd_config modifier :  
+![TSSR](CP3/2-Root.png)  
+Relancer le service avec systemctl restart ssh  
 
 #### Q.2.2.2 Autoriser l'accès à distance à ton compte personnel uniquement.  
 
+De même dans etc/ssh/sshd_config modifier :  
 
+![TSSR](CP3/3-Gwen.png)    
+
+Et relancer le service  
 
 #### Q.2.2.3 Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe  
 
+Décommenter et modifier les lignes suivantes.  
 
-
-
+![TSSR](CP3/4-SSH.png)   
 
 ## Partie 3 : Analyse du stockage  
 
 #### Q.2.3.1 Quels sont les systèmes de fichiers actuellement montés ?  
+
+![TSSR](CP3/5-LSBLK.png)  
+
+
 
 #### Q.2.3.2 Quel type de système de stockage ils utilisent ?  
 
