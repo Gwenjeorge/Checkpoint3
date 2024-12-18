@@ -17,7 +17,7 @@ Créer Lionel Marchand dans la même OU, l'ajouter au même groupe que Kelly Rha
 
 Desactiver le compte de Kelly Rhameur  
 
-![TSSR](4-Deactivated/.png)  
+![TSSR](CP1/4-Deactivated.png)  
 
 Le déplacer dans l'OU DeactivatedUser créée.  
 
