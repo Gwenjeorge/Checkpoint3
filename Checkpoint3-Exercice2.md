@@ -53,7 +53,15 @@ Ajout disque sdb
 ![TSSR](CP3/10-sdb.png)  
 
 Formater le disque avec :  
-fdisk /dev/sdb  
+fdisk /dev/sdb   
+
+![TSSR](CP3/11-fdisk.png)  
+
+Formater la partition :   
+avec mfks.ext4 /dev/sdb1  
+
+![TSSR](CP3/12-mkfs.png)  
+
 
 Réparer le raid avec :  
 mdadm --add /dev/md0 /dev/sdb1
