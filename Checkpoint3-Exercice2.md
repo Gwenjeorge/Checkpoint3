@@ -62,19 +62,38 @@ avec mfks.ext4 /dev/sdb1
 
 ![TSSR](CP3/12-mkfs.png)  
 
-
 Réparer le raid avec :  
-mdadm --add /dev/md0 /dev/sdb1
+mdadm --add /dev/md0 /dev/sdb1  
+
+La recovery s'exécute  
+![TSSR](CP3/13-recovery.png) 
+
+La réparation est terminée !  
+
+![TSSR](CP3/14-nice.png)  
+
+![TSSR](CP3/15-nice.png)   
 
 
 #### Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.  
 
-( à terminer )  
+vgdisplay pour voir les infos du groupe existant.  
+puis lvcreate -L 2G -n lv_storage cp3-vg
+
+![TSSR](CP3/16-lvcreate.png)   
+
+formater et monter  
+
+![TSSR](CP3/17-lvcreate.png)  
+
+modifier le fichier /dev/fstab pour monter automatiquement au démarrage en ajoutant la ligne : 
+/dev/cp3-vg/lv_storage /var/lib/bareos/storage  ext4  defaults  0  2  
+(modifier potentiellement /dev/vg_date/lv_backup par son UUID!)  
 
 #### Q.2.3.5 Combien d'espace disponible reste-t-il dans le groupe de volume ?  
 
-( à terminer )  
-
+![TSSR](CP3/18-vg.png)  
+1.79G !
 
 ## Partie 4 : Sauvegardes  
 
@@ -125,7 +144,7 @@ Il n'y a pas de règles particulières sur le trafic sortant et nous allons lais
 
 #### Q.2.6.1 Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun :  
 
-J'ai cherché partout dans /var/log/bareos ou dans /var/log/auth.log etc.. rien trouvé !  
+![TSSR](CP3/19-qd.png) 
 
 
 
