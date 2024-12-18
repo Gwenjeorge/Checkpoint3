@@ -84,7 +84,7 @@ puis lvcreate -L 2G -n lv_storage cp3-vg
 
 formater et monter  
 
-![TSSR](CP3/17-lvcreate.png)  
+![TSSR](CP3/17-mount.png)  
 
 modifier le fichier /dev/fstab pour monter automatiquement au démarrage en ajoutant la ligne : 
 /dev/cp3-vg/lv_storage /var/lib/bareos/storage  ext4  defaults  0  2  
