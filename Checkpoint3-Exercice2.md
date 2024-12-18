@@ -48,9 +48,24 @@ On peut aussi un RAID1 (mais ne contenant qu'un seule seule partition donc défe
 
 #### Q.2.3.3 Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID  
 
+Ajout disque sdb  
+
+![TSSR](CP3/10-sdb.png)  
+
+Formater le disque avec :  
+fdisk /dev/sdb  
+
+Réparer le raid avec :  
+mdadm --add /dev/md0 /dev/sdb1
+
+
 #### Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio qui servira à héberger des sauvegardes. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.  
 
+( à terminer )  
+
 #### Q.2.3.5 Combien d'espace disponible reste-t-il dans le groupe de volume ?  
+
+( à terminer )  
 
 
 ## Partie 4 : Sauvegardes  
@@ -96,7 +111,6 @@ nft list table inet inet_filter_table
 ![TSSR](CP3/9-input.png)  
 
 Il n'y a pas de règles particulières sur le trafic sortant et nous allons laisser ça tel quel.  
-
 
 
 ## Partie 6 : Analyse de logs  
