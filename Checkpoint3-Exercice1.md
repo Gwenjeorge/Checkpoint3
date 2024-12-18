@@ -32,9 +32,9 @@ Le déplacer dans l'OU DeactivatedUser créée.
 
 ![TSSR](CP1/8-Folder.png)  
 
-# Partie 2 : Restriction utilisateurs
+# Partie 2 : Restriction utilisateurs  
 
-#### Q.1.2.1 Faire en sorte que l'utilisateur Gabriel Ghul ne puisse se connecter que du lundi au vendredi, de 7h à 17h.
+#### Q.1.2.1 Faire en sorte que l'utilisateur Gabriel Ghul ne puisse se connecter que du lundi au vendredi, de 7h à 17h.  
 
 Trouver Monsieur Ghul (qui est en réalité Monsieur Guhl)!  
 
@@ -44,12 +44,31 @@ Faire la modification.
 
 ![TSSR](CP2/2-LOGON.png)    
 
+#### Q.1.2.2 De même, bloquer sa connexion au seul ordinateur CLIENT01.  
 
-#### Q.1.2.2 De même, bloquer sa connexion au seul ordinateur CLIENT01.
+Voilà qui est fait !  
 
-#### Q.1.2.3 Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers.
+![TSSR](CP2/3COMPUTER.png)   
+
+#### Q.1.2.3 Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers.  
+
+Modification de la politique de mdp avec une nouvelle GPO appliquées aux users de l'OU LabUsers.  
+![TSSR](CP2/4-GPO1.png)   
 
 # Partie 3 : Lecteurs réseaux
 
 #### Q.1.3.1 Créer une GPO Drive-Mount qui monte les lecteurs E: et F: sur les clients.
+
+Nous allons créer un dossier de partage ou nous allons mettre une script .bat contenant : 
+net use Y: \\Srvwin01\e /persistent:yes  
+net use Z: \\Srvwin01\e /persistent:yes  
+
+![TSSR](CP2/6-SHARED.png)  
+
+Autoriser le partage du contenu des lecteurs locaux E et F   
+
+Puis Créer une GPO pour exécuter le script  à la connexion des utilisateurs.  
+
+![TSSR](CP2/8-SCRIPT.png) 
+
 
