@@ -48,7 +48,7 @@ Faire la modification.
 
 Voilà qui est fait !  
 
-![TSSR](CP2/3COMPUTER.png)   
+![TSSR](CP2/3-COMPUTER.png)   
 
 #### Q.1.2.3 Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers.  
 
