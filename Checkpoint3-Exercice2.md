@@ -99,7 +99,11 @@ Il n'y a pas de règles particulières sur le trafic sortant et nous allons lais
 
 
 
+## Partie 6 : Analyse de logs  
 
+#### Q.2.6.1 Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun :  
+
+J'ai cherché partout dans /var/log/bareos ou dans /var/log/auth.log etc.. rien trouvé !  
 
 
 
