@@ -38,7 +38,7 @@ Décommenter et modifier les lignes suivantes.
 
 #### Q.2.3.1 Quels sont les systèmes de fichiers actuellement montés ?  
 
-![TSSR](CP3/6-LSBLK.png)  
+![TSSR](CP3/6-TYPE.png)  
 
 #### Q.2.3.2 Quel type de système de stockage ils utilisent ?  
 
