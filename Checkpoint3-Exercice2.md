@@ -24,7 +24,7 @@ Relancer le service avec systemctl restart ssh
 
 De même dans etc/ssh/sshd_config modifier :  
 
-![TSSR](CP3/3-Gwen.png)    
+![TSSR](CP3/3-gwen.png)    
 
 Et relancer le service  
 
