@@ -66,7 +66,7 @@ Réparer le raid avec :
 mdadm --add /dev/md0 /dev/sdb1  
 
 La recovery s'exécute  
-![TSSR](CP3/13-recovery.png) 
+![TSSR](CP3/13-Recovery.png) 
 
 La réparation est terminée !  
 
