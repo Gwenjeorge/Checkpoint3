@@ -38,13 +38,13 @@ Décommenter et modifier les lignes suivantes.
 
 #### Q.2.3.1 Quels sont les systèmes de fichiers actuellement montés ?  
 
-![TSSR](CP3/6-TYPE.png)  
+![TSSR](CP3/5-LSBLK.png)  
+
+On peut voir un RAID1 (mais ne contenant qu'un seule seule partition donc défectueux, la copie a disparue!) contenant des volumes LVM.  
 
 #### Q.2.3.2 Quel type de système de stockage ils utilisent ?  
 
-![TSSR](CP3/5-LSBLK.png)  
-
-On peut aussi un RAID1 (mais ne contenant qu'un seule seule partition donc défectueux, la copie a disparue!) contenant des volumes LVM.
+![TSSR](CP3/6-TYPE.png)  
 
 #### Q.2.3.3 Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID  
 
