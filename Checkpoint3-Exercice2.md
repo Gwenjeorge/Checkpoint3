@@ -86,7 +86,7 @@ formater et monter
 
 ![TSSR](CP3/17-mount.png)  
 
-modifier le fichier /dev/fstab pour monter automatiquement au démarrage en ajoutant la ligne : 
+modifier le fichier /dev/fstab pour monter automatiquement au démarrage en ajoutant la ligne :  
 /dev/cp3-vg/lv_storage /var/lib/bareos/storage  ext4  defaults  0  2  
 (modifier potentiellement /dev/vg_date/lv_backup par son UUID!)  
 
@@ -116,7 +116,7 @@ Le Storage Daemon (SD) gère le stockage des données sauvegardées. C'est là o
 
 #### Q.2.5.2 Quels types de communications sont autorisées ?  
 
-Ce sont uniquement des connexions entrantes.  
+En communication entrantes :    
 Le SSH (sur le port 22) et ICMP (en ipv4 et ipv6) ainsi que les flux interne (loopback). 
 
 #### Q.2.5.3 Quels types sont interdit ?  
